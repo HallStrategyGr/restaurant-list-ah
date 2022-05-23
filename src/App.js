@@ -23,7 +23,7 @@ function App() {
         <Route path='/random' element={<h1>Random</h1>} />
         <Route path='/add' element={<h1>Add Restaurant</h1>} />
         <Route path='/login' element={<h1>Login</h1>} />
-        <Route path='/List' element={<RestaurantList/>} />
+        <Route path='/' element={<RestaurantList/>} />
       </Routes>
       </Content>
       </Layout>
