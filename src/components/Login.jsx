@@ -18,7 +18,8 @@ const connectAuth = () => {
   return  getAuth(app); // connect to firebase/auth
 }
 
-export default function Login({ setUser }) {
+export default function Login() {
+    const {setUser} = useContext(UserContext);
   const handleLogin = ({ email, password }) => {
     const auth = connectAuth();
     // login with Firebase Auth
